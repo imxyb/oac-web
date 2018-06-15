@@ -441,7 +441,7 @@ li {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999; }
+  z-index: 33; }
 
 .laber-header .header {
   height: 80px; }
@@ -464,12 +464,14 @@ li {
   float: left; }
 
 .laber-header .header .headerR ul li a {
-  padding: 0 15px;
-  font-size: 16px;
   color: #fff;
   height: 80px;
   line-height: 80px;
   float: left; }
+
+.laber-header .header .headerR ul li .a2 {
+  padding: 0 15px;
+  font-size: 16px; }
 
 .laber-header .header .headerR ul li a:hover {
   -webkit-transition: 1s;
@@ -543,7 +545,8 @@ li {
   border-radius: 30px;
   margin-left: 24px;
   margin-top: 22px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 16px; }
 
 .laber-header .header .headerR .down:hover {
   background: #ececec;
@@ -931,62 +934,62 @@ li {
         margin-top: 108px;
         font-weight: lighter; }
       .laber-scene .scene .sceneMain .cont {
-        width: 1200px;
+        width: 100%;
         float: left;
         height: 292px;
         position: relative;
         margin-top: 114px; }
         .laber-scene .scene .sceneMain .cont .swiper-container {
           height: 292px; }
-          .laber-scene .scene .sceneMain .cont .prev {
-            width: 65px;
-            height: 292px;
-            background: rgba(255, 255, 255, 0.2);
-            left: -83px;
+        .laber-scene .scene .sceneMain .cont .prev {
+          width: 65px;
+          height: 292px;
+          background: rgba(255, 255, 255, 0.2);
+          left: -83px;
+          position: absolute;
+          top: 0;
+          z-index: 666; }
+          .laber-scene .scene .sceneMain .cont .prev i {
+            background: url(../img/icon.png) no-repeat -77px 0;
+            width: 33px;
+            height: 64px;
             position: absolute;
-            top: 0;
-            z-index: 666; }
-            .laber-scene .scene .sceneMain .cont .prev i {
-              background: url(../img/icon.png) no-repeat -77px 0;
-              width: 33px;
-              height: 64px;
-              position: absolute;
-              top: 50%;
-              margin-top: -32px;
-              left: 50%;
-              margin-left: -16px; }
-          .laber-scene .scene .sceneMain .cont .next {
-            width: 65px;
-            height: 292px;
-            background: rgba(255, 255, 255, 0.2);
-            right: -83px;
+            top: 50%;
+            margin-top: -32px;
+            left: 50%;
+            margin-left: -16px; }
+        .laber-scene .scene .sceneMain .cont .next {
+          width: 65px;
+          height: 292px;
+          background: rgba(255, 255, 255, 0.2);
+          right: -83px;
+          position: absolute;
+          top: 0;
+          z-index: 666; }
+          .laber-scene .scene .sceneMain .cont .next i {
+            background: url(../img/icon.png) no-repeat -33px 0;
+            width: 33px;
+            height: 64px;
             position: absolute;
-            top: 0;
-            z-index: 666; }
-            .laber-scene .scene .sceneMain .cont .next i {
-              background: url(../img/icon.png) no-repeat -33px 0;
-              width: 33px;
-              height: 64px;
-              position: absolute;
-              top: 50%;
-              margin-top: -32px;
-              left: 50%;
-              margin-left: -16px; }
+            top: 50%;
+            margin-top: -32px;
+            left: 50%;
+            margin-left: -16px; }
         .laber-scene .scene .sceneMain .cont .swiper-wrapper {
           height: 292px; }
         .laber-scene .scene .sceneMain .cont .swiper-slide {
           float: left;
           width: 376px;
           height: 288px;
-          -webkit-box-shadow: 0 0 3px 2px rgba(218, 218, 215, 0.75);
-                  box-shadow: 0 0 3px 2px rgba(218, 218, 215, 0.75);
           position: relative;
-          
           margin-top: 2px; }
           .laber-scene .scene .sceneMain .cont .swiper-slide img {
-            width: 100%;
+            width: calc(100% - 2px);
             height: 100%;
-            float: left; }
+            float: left;
+            box-shadow: 0 0 3px 2px rgba(218, 218, 215, 0.75);
+            -webkit-box-shadow: 0 0 3px 2px rgba(218, 218, 215, 0.75);
+            -moz-box-shadow: 0 0 3px 2px rgba(218, 218, 215, 0.75); }
           .laber-scene .scene .sceneMain .cont .swiper-slide span {
             line-height: 288px;
             position: absolute;
@@ -1249,3 +1252,20 @@ li {
         font-size: 18;
         color: #fff;
         margin-top: 104px; }
+
+.systemMain span.spTop {
+  margin-top: 40px; }
+
+.laber-header .logo.small {
+  width: 78px;
+  height: auto;
+  margin-top: 26px; }
+  .laber-header .logo.small img {
+    width: 100%;
+    height: auto; }
+.laber-header .headerR .down.downSmall {
+  width: 100px;
+  margin-left: 10px; }
+.laber-header .headerR a.a1 {
+  padding: 0 14px;
+  font-size: 15px; }
