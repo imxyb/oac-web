@@ -1,0 +1,1251 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  line-height: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clear-fix {
+  zoom: 1; }
+
+body {
+  background: #f8f8f8; }
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+li {
+  list-style: none; }
+
+.auto {
+  width: 1200px;
+  margin: 0 auto; }
+
+.laber-header {
+  width: 100%;
+  height: 80px;
+  min-width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
+.laber-header .header {
+  height: 80px; }
+
+.laber-header .header .logo {
+  width: 136px;
+  height: 44px;
+  float: left;
+  margin-top: 18px; }
+
+.laber-header .header .headerR {
+  float: right;
+  height: 80px; }
+
+.laber-header .header .headerR ul {
+  float: left;
+  height: 80px; }
+
+.laber-header .header .headerR ul li {
+  float: left; }
+
+.laber-header .header .headerR ul li a {
+  padding: 0 15px;
+  font-size: 16px;
+  color: #fff;
+  height: 80px;
+  line-height: 80px;
+  float: left; }
+
+.laber-header .header .headerR ul li a:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #ffa800; }
+
+.laber-header .header .headerR ul .on a {
+  color: #ffa800; }
+
+.laber-header .header .headerR .eng {
+  float: left;
+  padding: 0 15px;
+  height: 80px;
+  position: relative;
+  width: 96px; }
+
+.laber-header .header .headerR .eng p {
+  color: #fff;
+  font-size: 16px;
+  float: left;
+  line-height: 80px;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  text-align: center; }
+
+.laber-header .header .headerR .eng p i {
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  background: url(../img/icon.png) no-repeat 0 -40px;
+  right: -16px;
+  top: 50%;
+  margin-top: -4px; }
+
+.laber-header .header .headerR .eng .ul {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  background: #fff;
+  padding: 0 10px;
+  width: 100%; }
+
+.laber-header .header .headerR .eng .ul li {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer; }
+
+.laber-header .header .headerR .eng .ul li:hover {
+  color: #ffa800;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.laber-header .header .headerR .getLink {
+  float: left;
+  background: url(../img/icon.png) no-repeat 0 0;
+  width: 24px;
+  height: 22px;
+  margin-left: 22px;
+  margin-top: 28px; }
+
+.laber-header .header .headerR .down {
+  float: left;
+  width: 120px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background: #fff;
+  border-radius: 30px;
+  margin-left: 24px;
+  margin-top: 22px;
+  cursor: pointer; }
+
+.laber-header .header .headerR .down:hover {
+  background: #ececec;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.laber-banner {
+  width: 100%;
+  height: 799px;
+  background: url(../img/bg01.jpg) no-repeat center top;
+  min-width: 1200px; }
+
+.laber-banner .banner {
+  height: 799px; }
+
+.laber-banner .banner p {
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 384px;
+  color: #cae8ed;
+  font-size: 26px;
+  font-family: "宋体"; }
+
+.laber-banner .banner h1 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 54px;
+  color: #cae8ed;
+  margin-top: 39px; }
+
+/******
+ * 
+ */
+.laber-target {
+  width: 100%;
+  height: 978px;
+  background: url(../img/bg06.jpg) no-repeat center top;
+  min-width: 1200px; }
+
+.laber-target .target {
+  height: 978px; }
+
+.laber-target .target .targetMain {
+  width: 100%;
+  height: 978px;
+  float: left;
+  position: relative; }
+
+.laber-target .target .targetMain h1 {
+  width: 100%;
+  margin-top: 50px;
+  float: left;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 32px;
+  color: #000000; }
+
+.laber-target .target .targetMain span {
+  font-size: 16px;
+  color: #333333;
+  width: 100%;
+  float: left;
+  text-align: center;
+  line-height: 26px;
+  margin-top: 46px; }
+
+.laber-target .target .targetMain ul {
+  width: 100%;
+  height: 203px;
+  position: absolute;
+  top: 275px;
+  left: 0; }
+
+.laber-target .target .targetMain ul li {
+  width: calc(100% / 7);
+  float: left;
+  height: 203px;
+  text-align: center; }
+
+.laber-target .target .targetMain ul li i {
+  background: url(../img/icon.png) no-repeat;
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  margin-top: 52px; }
+
+.laber-target .target .targetMain ul li .i1 {
+  background-position: -58px -70px; }
+
+.laber-target .target .targetMain ul li .i2 {
+  background-position: -58px -129px; }
+
+.laber-target .target .targetMain ul li .i3 {
+  background-position: -58px -187px; }
+
+.laber-target .target .targetMain ul li .i4 {
+  background-position: -58px -245px; }
+
+.laber-target .target .targetMain ul li .i5 {
+  background-position: -58px -303px; }
+
+.laber-target .target .targetMain ul li .i6 {
+  background-position: -58px -361px; }
+
+.laber-target .target .targetMain ul li .i7 {
+  background-position: -58px -418px; }
+
+.laber-target .target .targetMain ul .on {
+  background: #232229; }
+
+.laber-target .target .targetMain ul li:hover {
+  background: #232229;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.laber-target .target .targetMain ul .on em {
+  color: #fff; }
+
+.laber-target .target .targetMain ul li:hover em {
+  color: #fff; }
+
+.laber-target .target .targetMain ul .on .i1 {
+  background-position: 0 -70px; }
+
+.laber-target .target .targetMain ul .on .i2 {
+  background-position: 0px -129px; }
+
+.laber-target .target .targetMain ul .on .i3 {
+  background-position: 0px -187px; }
+
+.laber-target .target .targetMain ul .on .i4 {
+  background-position: 0px -245px; }
+
+.laber-target .target .targetMain ul .on .i5 {
+  background-position: 0px -303px; }
+
+.laber-target .target .targetMain ul .on .i6 {
+  background-position: 0px -361px; }
+
+.laber-target .target .targetMain ul .on .i7 {
+  background-position: 0px -418px; }
+
+.laber-target .target .targetMain ul li:hover .i1 {
+  background-position: 0 -70px; }
+
+.laber-target .target .targetMain ul li:hover .i2 {
+  background-position: 0 -129px; }
+
+.laber-target .target .targetMain ul li:hover .i3 {
+  background-position: 0 -187px; }
+
+.laber-target .target .targetMain ul li:hover .i4 {
+  background-position: 0 -245px; }
+
+.laber-target .target .targetMain ul li:hover .i5 {
+  background-position: 0 -303px; }
+
+.laber-target .target .targetMain ul li:hover .i6 {
+  background-position: 0 -361px; }
+
+.laber-target .target .targetMain ul li:hover .i7 {
+  background-position: 0 -418px; }
+
+.laber-target .target .targetMain ul li em {
+  width: 100%;
+  text-align: center;
+  float: left;
+  font-style: normal;
+  margin-top: 22px;
+  padding: 0 10px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #0a1423; }
+
+.laber-target .target .targetMain .targetItem {
+  width: 100%;
+  height: 499px;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.laber-target .target .targetMain .targetItem h2 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  font-weight: lighter;
+  margin-top: 125px; }
+
+.laber-target .target .targetMain .targetItem p {
+  padding: 0 90px;
+  text-align: center;
+  margin-top: 79px;
+  float: left;
+  line-height: 30px;
+  color: #fff;
+  font-size: 16px; }
+
+/******
+ * 
+ */
+.laber-system {
+  width: 100%;
+  height: 806px;
+  background: url(../img/bg02.jpg) no-repeat center top;
+  min-width: 1200px; }
+
+.laber-system .system {
+  height: 806px; }
+
+.laber-system .system .systemMain {
+  width: 100%;
+  height: 806px;
+  float: left;
+  position: relative; }
+
+.laber-system .system .systemMain h1 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin-top: 110px;
+  font-weight: lighter; }
+
+.laber-system .system .systemMain dd span {
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  float: left; }
+.laber-system .system .systemMain dd p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 26px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  float: left; }
+.laber-system .system .systemMain .dd1 {
+  width: 258px;
+  height: 258px;
+  border-radius: 50%;
+  background: rgba(133, 8, 64, 0.23);
+  position: absolute;
+  top: 462px;
+  left: 0;
+  z-index: 2; }
+  .laber-system .system .systemMain .dd1 .span1 {
+    line-height: 258px; }
+.laber-system .system .systemMain .dd2 {
+  width: 313px;
+  height: 313px;
+  border-radius: 50%;
+  background: rgba(163, 145, 47, 0.13);
+  position: absolute;
+  top: 305px;
+  left: 212px; }
+  .laber-system .system .systemMain .dd2 .span2 {
+    margin-top: 110px; }
+.laber-system .system .systemMain .dd3 {
+  width: 277px;
+  height: 277px;
+  border-radius: 50%;
+  background: rgba(90, 127, 159, 0.23);
+  position: absolute;
+  top: 335px;
+  left: 513px;
+  z-index: 2; }
+  .laber-system .system .systemMain .dd3 .span3 {
+    margin-top: 102px; }
+.laber-system .system .systemMain .dd4 {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background: rgba(90, 155, 159, 0.23);
+  position: absolute;
+  top: 218px;
+  left: 880px; }
+  .laber-system .system .systemMain .dd4 .span4 {
+    margin-top: 73px; }
+.laber-system .system .systemMain .dd5 {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background: rgba(206, 124, 102, 0.23);
+  position: absolute;
+  top: 421px;
+  left: 965px;
+  z-index: 2; }
+  .laber-system .system .systemMain .dd5 .span5 {
+    margin-top: 73px; }
+
+/*******
+ * 
+ */
+.laber-zoology {
+  width: 100%;
+  height: 892px;
+  background: #fff;
+  min-width: 1200px; }
+  .laber-zoology .zoology {
+    height: 892px; }
+    .laber-zoology .zoology .zoologyMain {
+      width: 100%;
+      float: left; }
+      .laber-zoology .zoology .zoologyMain h1 {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        color: #000;
+        margin-top: 108px;
+        font-weight: lighter; }
+      .laber-zoology .zoology .zoologyMain ul {
+        width: 100%;
+        float: left;
+        margin-top: 104px; }
+        .laber-zoology .zoology .zoologyMain ul li {
+          width: 376px;
+          height: 232px;
+          float: left;
+          border: 1px solid #d1d1d1;
+          margin-left: 36px;
+          margin-bottom: 32px;
+          -webkit-box-shadow: 0px 3px 3px rgba(226, 226, 226, 0.75);
+                  box-shadow: 0px 3px 3px rgba(226, 226, 226, 0.75);
+          text-align: center; }
+          .laber-zoology .zoology .zoologyMain ul li i {
+            width: 54px;
+            height: 54px;
+            background: url(../img/icon.png) no-repeat;
+            display: inline-block;
+            margin-top: 47px; }
+          .laber-zoology .zoology .zoologyMain ul li span {
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            color: #333333;
+            font-weight: bold;
+            margin-top: 20px; }
+          .laber-zoology .zoology .zoologyMain ul li p {
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            color: #999999;
+            margin-top: 16px; }
+          .laber-zoology .zoology .zoologyMain ul li .i1 {
+            background-position: -117px -69px; }
+          .laber-zoology .zoology .zoologyMain ul li .i2 {
+            background-position: -117px -130px; }
+          .laber-zoology .zoology .zoologyMain ul li .i3 {
+            background-position: -117px -186px; }
+          .laber-zoology .zoology .zoologyMain ul li .i4 {
+            background-position: -117px -245px; }
+          .laber-zoology .zoology .zoologyMain ul li .i5 {
+            background-position: -117px -303px; }
+          .laber-zoology .zoology .zoologyMain ul li .i6 {
+            background-position: -117px -361px; }
+
+/******
+ * 
+ */
+.laber-scene {
+  width: 100%;
+  height: 684px;
+  background: url(../img/bg03.jpg) no-repeat;
+  min-width: 1200px; }
+  .laber-scene .scene {
+    height: 684px; }
+    .laber-scene .scene .sceneMain {
+      width: 100%;
+      float: left; }
+      .laber-scene .scene .sceneMain h1 {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 108px;
+        font-weight: lighter; }
+      .laber-scene .scene .sceneMain .cont {
+        width: 1200px;
+        float: left;
+        height: 292px;
+        position: relative;
+        margin-top: 114px; }
+        .laber-scene .scene .sceneMain .cont .swiper-container {
+          height: 292px; }
+          .laber-scene .scene .sceneMain .cont .prev {
+            width: 65px;
+            height: 292px;
+            background: rgba(255, 255, 255, 0.2);
+            left: -83px;
+            position: absolute;
+            top: 0;
+            z-index: 666; }
+            .laber-scene .scene .sceneMain .cont .prev i {
+              background: url(../img/icon.png) no-repeat -77px 0;
+              width: 33px;
+              height: 64px;
+              position: absolute;
+              top: 50%;
+              margin-top: -32px;
+              left: 50%;
+              margin-left: -16px; }
+          .laber-scene .scene .sceneMain .cont .next {
+            width: 65px;
+            height: 292px;
+            background: rgba(255, 255, 255, 0.2);
+            right: -83px;
+            position: absolute;
+            top: 0;
+            z-index: 666; }
+            .laber-scene .scene .sceneMain .cont .next i {
+              background: url(../img/icon.png) no-repeat -33px 0;
+              width: 33px;
+              height: 64px;
+              position: absolute;
+              top: 50%;
+              margin-top: -32px;
+              left: 50%;
+              margin-left: -16px; }
+        .laber-scene .scene .sceneMain .cont .swiper-wrapper {
+          height: 292px; }
+        .laber-scene .scene .sceneMain .cont .swiper-slide {
+          float: left;
+          width: 376px;
+          height: 288px;
+          -webkit-box-shadow: 0 0 3px 2px rgba(218, 218, 215, 0.75);
+                  box-shadow: 0 0 3px 2px rgba(218, 218, 215, 0.75);
+          position: relative;
+          
+          margin-top: 2px; }
+          .laber-scene .scene .sceneMain .cont .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            float: left; }
+          .laber-scene .scene .sceneMain .cont .swiper-slide span {
+            line-height: 288px;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            left: 0;
+            font-size: 24px;
+            color: #fff; }
+
+/*******
+ * 
+ */
+.laber-team {
+  width: 100%;
+  height: 846px;
+  background: #fff;
+  min-width: 1200px; }
+  .laber-team .team {
+    height: 846px; }
+    .laber-team .team .teamMain {
+      width: 100%;
+      float: left; }
+      .laber-team .team .teamMain h1 {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        color: #000;
+        margin-top: 108px;
+        font-weight: lighter; }
+      .laber-team .team .teamMain ul {
+        width: 100%;
+        float: left;
+        margin-top: 127px; }
+        .laber-team .team .teamMain ul li {
+          float: left;
+          width: 266px;
+          margin: 0 15px;
+          text-align: center; }
+          .laber-team .team .teamMain ul li img {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            display: inline-block;
+            background: #4aaec4; }
+          .laber-team .team .teamMain ul li span {
+            font-size: 24px;
+            color: #000000;
+            margin-top: 36px;
+            width: 100%;
+            text-align: center;
+            float: left; }
+          .laber-team .team .teamMain ul li p {
+            font-size: 14px;
+            color: #666666;
+            margin-top: 30px;
+            width: 100%;
+            text-align: left;
+            float: left;
+            line-height: 24px; }
+
+/***********
+ * 
+ */
+.laber-planning {
+  width: 100%;
+  height: 1245px;
+  background: url(../img/bg04.jpg) no-repeat center top;
+  min-width: 1200px; }
+  .laber-planning .planning {
+    height: 1245px; }
+    .laber-planning .planning .planningMain {
+      width: 100%; }
+      .laber-planning .planning .planningMain h1 {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 86px;
+        font-weight: lighter; }
+      .laber-planning .planning .planningMain .con {
+        width: 100%;
+        float: left;
+        margin-top: 113px;
+        position: relative; }
+        .laber-planning .planning .planningMain .con .qx {
+          width: 93px;
+          height: 878px;
+          position: absolute;
+          background: url(../img/qx.png) no-repeat;
+          left: 50%;
+          margin-left: -46px;
+          z-index: 2; }
+        .laber-planning .planning .planningMain .con .line {
+          width: 1px;
+          height: 878px;
+          background: rgba(100, 132, 173, 0.3);
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -2px; }
+          .laber-planning .planning .planningMain .con .line .q {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+            left: -5px;
+            z-index: 3; }
+            .laber-planning .planning .planningMain .con .line .q .lineLeft, .laber-planning .planning .planningMain .con .line .q .lineright {
+              display: inline-block;
+              width: 225px;
+              position: absolute; }
+              .laber-planning .planning .planningMain .con .line .q .lineLeft span, .laber-planning .planning .planningMain .con .line .q .lineright span {
+                font-size: 24px;
+                color: #fff;
+                width: 100;
+                text-align: left; }
+              .laber-planning .planning .planningMain .con .line .q .lineLeft p, .laber-planning .planning .planningMain .con .line .q .lineright p {
+                font-size: 16px;
+                color: #fff;
+                width: 100;
+                text-align: left;
+                margin-top: 18px;
+                line-height: 22px; }
+            .laber-planning .planning .planningMain .con .line .q .lineLeft {
+              left: -368px;
+              top: -5px; }
+            .laber-planning .planning .planningMain .con .line .q .lineright {
+              right: -416px;
+              top: -5px; }
+          .laber-planning .planning .planningMain .con .line .q1 {
+            top: -5px; }
+            .laber-planning .planning .planningMain .con .line .q1 .lineH1 {
+              width: 143px;
+              height: 1px;
+              background: rgba(100, 132, 173, 0.3);
+              position: absolute;
+              left: -143px;
+              top: 5px; }
+          .laber-planning .planning .planningMain .con .line .q2 {
+            top: 196px; }
+            .laber-planning .planning .planningMain .con .line .q2 .lineH2 {
+              width: 143px;
+              height: 1px;
+              background: rgba(100, 132, 173, 0.3);
+              position: absolute;
+              right: -143px;
+              top: 5px; }
+          .laber-planning .planning .planningMain .con .line .q3 {
+            top: 433px; }
+            .laber-planning .planning .planningMain .con .line .q3 .lineH1 {
+              width: 143px;
+              height: 1px;
+              background: rgba(100, 132, 173, 0.3);
+              position: absolute;
+              left: -143px;
+              top: 5px; }
+          .laber-planning .planning .planningMain .con .line .q4 {
+            top: 643px; }
+            .laber-planning .planning .planningMain .con .line .q4 .lineH2 {
+              width: 143px;
+              height: 1px;
+              background: rgba(100, 132, 173, 0.3);
+              position: absolute;
+              right: -143px;
+              top: 5px; }
+          .laber-planning .planning .planningMain .con .line .q5 {
+            bottom: -5px; }
+            .laber-planning .planning .planningMain .con .line .q5 .lineH1 {
+              width: 143px;
+              height: 1px;
+              background: rgba(100, 132, 173, 0.3);
+              position: absolute;
+              left: -143px;
+              top: 5px; }
+
+/******
+ * 
+ */
+.laber-joinUs {
+  width: 100%;
+  height: 645px;
+  background: url(../img/bg05.jpg) no-repeat center top;
+  min-width: 1200px; }
+  .laber-joinUs .joinUs {
+    height: 645px; }
+    .laber-joinUs .joinUs .joinUsMain {
+      width: 100%;
+      float: left; }
+      .laber-joinUs .joinUs .joinUsMain h1 {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 86px;
+        font-weight: lighter; }
+      .laber-joinUs .joinUs .joinUsMain span {
+        width: 100%;
+        float: left;
+        font-size: 16px;
+        color: #fff;
+        margin-top: 75px;
+        text-align: center; }
+      .laber-joinUs .joinUs .joinUsMain form {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-top: 50px; }
+        .laber-joinUs .joinUs .joinUsMain form label {
+          width: 604px;
+          display: inline-block; }
+          .laber-joinUs .joinUs .joinUsMain form label input {
+            width: 452px;
+            height: 45px;
+            background: #fff;
+            border: 0;
+            float: left;
+            padding: 0 10px; }
+          .laber-joinUs .joinUs .joinUsMain form label .btn {
+            width: 152px;
+            height: 45px;
+            background: #2187d5;
+            float: left;
+            font-size: 22px;
+            color: #fff;
+            line-height: 45px;
+            text-align: center;
+            cursor: pointer; }
+      .laber-joinUs .joinUs .joinUsMain ul {
+        width: 100%;
+        float: left;
+        margin-top: 86px; }
+        .laber-joinUs .joinUs .joinUsMain ul li {
+          width: 20%;
+          float: left;
+          text-align: center; }
+          .laber-joinUs .joinUs .joinUsMain ul li a {
+            background: url(../img/icon.png) no-repeat;
+            width: 62px;
+            height: 62px;
+            display: inline-block; }
+          .laber-joinUs .joinUs .joinUsMain ul li .a1 {
+            background-position: -181px -70px; }
+          .laber-joinUs .joinUs .joinUsMain ul li .a2 {
+            background-position: -181px -142px; }
+          .laber-joinUs .joinUs .joinUsMain ul li .a3 {
+            background-position: -181px -216px; }
+          .laber-joinUs .joinUs .joinUsMain ul li .a4 {
+            background-position: -181px -291px; }
+          .laber-joinUs .joinUs .joinUsMain ul li .a5 {
+            background-position: -181px -363px; }
+      .laber-joinUs .joinUs .joinUsMain .bq {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 18;
+        color: #fff;
+        margin-top: 104px; }
