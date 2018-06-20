@@ -1034,8 +1034,7 @@ li {
             width: 240px;
             height: 240px;
             border-radius: 50%;
-            display: inline-block;
-            background: #4aaec4; }
+            display: inline-block; }
           .laber-team .team .teamMain ul li span {
             font-size: 24px;
             color: #000000;
@@ -1225,10 +1224,11 @@ li {
       .laber-joinUs .joinUs .joinUsMain ul {
         width: 100%;
         float: left;
-        margin-top: 86px; }
+        margin-top: 86px;
+        text-align: center; }
         .laber-joinUs .joinUs .joinUsMain ul li {
           width: 20%;
-          float: left;
+          display: inline-block;
           text-align: center; }
           .laber-joinUs .joinUs .joinUsMain ul li a {
             background: url(../img/icon.png) no-repeat;
