@@ -470,7 +470,7 @@ li {
   float: left; }
 
 .laber-header .header .headerR ul li .a2 {
-  padding: 0 15px;
+  padding: 0 26px;
   font-size: 16px; }
 
 .laber-header .header .headerR ul li a:hover {
@@ -575,7 +575,7 @@ li {
   width: 100%;
   float: left;
   text-align: center;
-  font-size: 54px;
+  font-size: 44px;
   color: #cae8ed;
   margin-top: 39px; }
 
@@ -1257,9 +1257,9 @@ li {
   margin-top: 40px; }
 
 .laber-header .logo.small {
-  width: 78px;
+  width: 120px;
   height: auto;
-  margin-top: 26px; }
+  margin-top: 20px; }
   .laber-header .logo.small img {
     width: 100%;
     height: auto; }
@@ -1267,5 +1267,5 @@ li {
   width: 100px;
   margin-left: 10px; }
 .laber-header .headerR a.a1 {
-  padding: 0 14px;
-  font-size: 15px; }
+  padding: 0 18px;
+  font-size: 16px; }
